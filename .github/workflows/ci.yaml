@@ -41,7 +41,7 @@ jobs:
         with:
           channels: conda-forge,nodefaults
           channel-priority: strict
-          activate-environment: xpersist-dev
+          activate-environment: xdev-project-dev
           auto-update-conda: false
           python-version: ${{ matrix.python-version }}
           environment-file: ci/environment.yml
