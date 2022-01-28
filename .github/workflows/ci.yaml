@@ -11,7 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     if: |
       github.repository == 'ncar-xdev/python-project-template'
-      && (github.event_name == 'push' || github.event_name == 'pull_request')
     outputs:
       should_skip: ${{ steps.skip_check.outputs.should_skip }}
     steps:
